@@ -1,0 +1,263 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+	background: #fdfdfd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.65em;
+}
+
+h3 {
+  font-size: 1.3em;
+  margin-left: 10px;
+}
+
+h4 {
+  font-size: 1.15em;
+  margin-left: 20px;
+  font-weight: 120;
+}
+
+a {
+    text-decoration: underline;
+    color: rgb(61, 146, 201);
+}
+a:hover,
+a:focus {
+    text-decoration: underline;
+    color: rgb(31, 126, 171);
+}
+
+p, ul, ol, details {
+  margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+details {
+  margin-bottom: 5px;
+}
+hr {
+  margin-top:40px;
+}
+li>p {
+  margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+li>ul {
+    margin-left: 0px;
+}
+
+summary:hover {
+    cursor: pointer;
+}
+summary {
+    color: rgb(61, 146, 201);
+    text-decoration: underline;
+}
+
+.external {
+  width: 0.6em;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+/* LAYOUT CSS */
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+#layout {
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    top: auto;
+    margin: 3em auto;
+}
+
+/*.sidebar {
+    background: rgb(61, 79, 93);
+    color: #000;
+}*/
+.sidebar {
+    background: #fdfdfd;
+    color: #4f4f4f;
+}
+
+.brand-title,
+.brand-tagline {
+    margin: 0;
+}
+.brand-title {
+    text-transform: uppercase;
+    margin-bottom: 25px;
+font-family: 'Fjalla One', sans-serif;
+}
+.brand-tagline {
+font-family: 'Fjalla One', sans-serif;
+font-size: 1.2em;
+}
+/*.brand-tagline {
+    font-weight: 300;
+    color: rgb(176, 202, 219);
+font-family: 'Fjalla One', sans-serif;
+}*/
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 25px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+.contact-info {
+}
+
+.nav-item, .nav-download {
+    display: block;
+    zoom: 1.3;
+	margin-bottom: 0.3em;
+}
+.nav-item a, .nav-download a {
+    background: transparent;
+    /*color: #2f2f2f;*/
+    text-decoration: none;
+}
+
+
+.nav-download {
+  margin-top: 30px;
+  zoom: 1.0;
+}
+/*.nav-item a {
+    background: transparent;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-size: 85%;
+}*/
+.nav-item a:hover,
+.nav-item a:focus {
+    text-decoration: underline;
+}
+
+.content-subhead {
+    text-transform: uppercase;
+    color: #aaa;
+    border-bottom: 1px solid #eee;
+    padding: 0.4em 0;
+    font-size: 80%;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.content {
+    padding: 2em 1em 0;
+}
+
+.posts {
+    max-width: 850px;
+}
+.post {
+    padding-bottom: 2em;
+}
+.post-title {
+    font-size: 2.5em;
+    color: #4f4f4f;
+    margin-bottom: 0.1em;
+	font-family: 'Fjalla One', serif;
+}
+.post-avatar {
+    border-radius: 50px;
+    float: right;
+    margin-left: 1em;
+}
+.post-description {
+	font-family: 'Sura', serif;
+    color: #4f4f4f;
+}
+.post-meta {
+    color: #999;
+    font-size: 90%;
+    margin: 0;
+}
+
+.post-category {
+    margin: 0 0.1em;
+    padding: 0.3em 1em;
+    color: #4f4f4f;
+    background: #999;
+    font-size: 80%;
+}
+    .post-category-design {
+        background: #5aba59;
+    }
+    .post-category-pure {
+        background: #4d85d1;
+    }
+    .post-category-yui {
+        background: #8156a7;
+    }
+    .post-category-js {
+        background: #df2d4f;
+    }
+
+.post-images {
+    margin: 1em 0;
+}
+.post-image-meta {
+    margin-top: -3.5em;
+    margin-left: 1em;
+    color: #4f4f4f;
+    text-shadow: 0 1px 1px #333;
+}
+
+.footer {
+    text-align: center;
+    padding: 1em 0;
+}
+.footer a {
+    color: #ccc;
+    font-size: 80%;
+}
+.footer .pure-menu a:hover,
+.footer .pure-menu a:focus {
+    background: none;
+}
+
+@media (min-width: 48em) {
+    .content {
+        padding: 2em 3em 0;
+        margin-left: 25%;
+    }
+
+    .header {
+        margin: 30% 2em 0;
+        text-align: right;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+}

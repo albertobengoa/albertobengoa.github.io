@@ -1,0 +1,40 @@
+body {
+	font-family: 'Rationale', sans-serif;
+}
+.header {
+	padding-left:40px;
+	padding-top:20px;
+	padding-right:40px;
+}
+
+.header {
+	width:150px;
+	float:left;
+}
+
+.contents {
+	margin-left:250px;
+}
+
+.title {
+	font-size:2.5em;
+	color:#808080;
+	
+}
+.contact  a{
+	font-size:1.5em;
+	color:#cccccc;
+	float:right;
+	text-decoration:none;
+	margin-right:14px;
+}
+
+.hrkimg {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	left: 50%;
+	top: 50%;
+	margin-left: -250px;
+	margin-top: -250px;
+}

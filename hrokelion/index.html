@@ -1,0 +1,67 @@
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Rationale' rel='stylesheet' type='text/css'>
+	<link href='hrokelion.css' rel='stylesheet' type='text/css'>
+	<title>Hrokelion</title>
+</head>
+<body>
+
+<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+
+<div class="header"><div class="title">Hrokelion</div><div class="contact">
+<script language=javascript>
+<!--
+var username = "me";
+var hostname = "albertobengoa.com";
+var linktext = "contact";
+document.write("<a href=" + "mail" + "to:" + username +
+"@" + hostname + ">" + linktext + "</a>")
+//-->
+</script> </div></div>
+
+<div class="contents"><div class="hrkimg">
+<img src="img/0.png"/>
+</div></div>
+<script language=javascript>
+
+var purity = ['purity/0.png','purity/1.png','purity/2.png','purity/3.png','purity/4.png'];
+var orthodoxy = ['orthodoxy/0.png','orthodoxy/1.png','orthodoxy/2.png','orthodoxy/3.png'];
+var departure = ['departure/0.png','departure/1.png','departure/2.png','departure/3.png'];
+var crossed = ['crossed/0.png','crossed/1.png','crossed/2.png'];
+var encounter = ['encounter/0.png','encounter/1.png','encounter/2.png','encounter/3.png','encounter/4.png','encounter/5.png','encounter/6.png'];
+var space = ['space/0.png','space/1.png','space/2.png','space/3.png','space/4.png','space/5.png','space/6.png'];
+var deviation = ['deviation/0.png','deviation/1.png','deviation/2.png'];
+var ends = ['ends/0.png','ends/1.png','ends/2.png','ends/3.png'];
+var horizon = ['horizon/0.png','horizon/1.png','horizon/2.png','horizon/3.png','horizon/4.png','horizon/5.png'];
+var breakpoint = ['breakpoint/0.png','breakpoint/1.png','breakpoint/2.png','breakpoint/3.png'];
+var togetherI = ['togetherI/0.png','togetherI/1.png','togetherI/2.png','togetherI/3.png','togetherI/4.png'];
+var fusion = ['fusion/0.png','fusion/1.png','fusion/2.png','fusion/3.png','fusion/4.png','fusion/5.png','fusion/6.png','fusion/7.png'];
+var click = ['click/0.png','click/1.png','click/2.png'];
+var microcosmos = ['microcosmos/0.png','microcosmos/1.png','microcosmos/2.png','microcosmos/3.png','microcosmos/4.png','microcosmos/5.png','microcosmos/6.png','microcosmos/7.png','microcosmos/8.png','microcosmos/9.png'];
+var infinity = ['infinity/0.png','infinity/1.png','infinity/2.png','infinity/3.png'];
+var togetherII = ['togetherII/0.png','togetherII/1.png','togetherII/2.png','togetherII/3.png','togetherII/4.png'];
+var equilibrium = ['equilibrium/0.png','equilibrium/1.png','equilibrium/2.png'];
+var separation = ['separation/0.png','separation/1.png','separation/2.png','separation/3.png'];
+var equilibriumbreak= ['equilibriumbreak/0.png','equilibriumbreak/1.png','equilibriumbreak/2.png','equilibriumbreak/3.png','equilibriumbreak/4.png'];
+
+//var imgs = equilibriumbreak.concat(separation).concat(equilibrium).concat(togetherII).concat(infinity).concat(microcosmos).concat(click).concat(fusion).concat(togetherI).concat(breakpoint).concat(horizon).concat(ends).concat(deviation).concat(space).concat(encounter).concat(crossed).concat(purity).concat(orthodoxy).concat(departure).reverse();
+
+var imgs = [].concat(purity,orthodoxy,departure,crossed,encounter,space,deviation,ends,
+					horizon,breakpoint,togetherI,fusion,click,microcosmos,infinity,
+					togetherII,equilibrium,separation,equilibriumbreak).reverse();
+
+
+var nextimg = function () {
+	var n = imgs.pop();
+	imgs = [n].concat(imgs);
+	$('.hrkimg img').fadeOut(1000,function(){
+		$('.hrkimg img').attr('src','img/'+n);
+		$('.hrkimg img').fadeIn(1000);});
+}
+
+$(document).ready(nextimg);
+$('.hrkimg').click(nextimg);
+</script>
+
+<body/>
+</html>
